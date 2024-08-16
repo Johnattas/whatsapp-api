@@ -1,6 +1,6 @@
 <?php
 
-namespace johnattas\WhatsappApi\Message\Template;
+namespace Johnattas\WhatsappApi\Message\Template;
 
 final class Component
 {

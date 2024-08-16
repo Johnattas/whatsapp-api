@@ -1,6 +1,6 @@
 <?php
 
-namespace johnattas\WhatsappApi\WebHook\Notification\Support;
+namespace Johnattas\WhatsappApi\WebHook\Notification\Support;
 
 /**
  * @method static PricingCategory AUTHENTICATION()

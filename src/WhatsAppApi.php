@@ -1,14 +1,14 @@
 <?php
 
-namespace johnattas\WhatsappApi;
+namespace Johnattas\WhatsappApi;
 
-use johnattas\WhatsappApi\Message\ButtonReply\ButtonAction;
-use johnattas\WhatsappApi\Message\Contact\ContactName;
-use johnattas\WhatsappApi\Message\Contact\Phone;
-use johnattas\WhatsappApi\Message\CtaUrl\Header;
-use johnattas\WhatsappApi\Message\Media\MediaID;
-use johnattas\WhatsappApi\Message\OptionsList\Action;
-use johnattas\WhatsappApi\Message\Template\Component;
+use Johnattas\WhatsappApi\Message\ButtonReply\ButtonAction;
+use Johnattas\WhatsappApi\Message\Contact\ContactName;
+use Johnattas\WhatsappApi\Message\Contact\Phone;
+use Johnattas\WhatsappApi\Message\CtaUrl\Header;
+use Johnattas\WhatsappApi\Message\Media\MediaID;
+use Johnattas\WhatsappApi\Message\OptionsList\Action;
+use Johnattas\WhatsappApi\Message\Template\Component;
 
 class WhatsAppApi
 {

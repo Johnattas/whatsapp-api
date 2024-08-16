@@ -1,8 +1,8 @@
 <?php
 
-namespace johnattas\WhatsappApi\Response;
+namespace Johnattas\WhatsappApi\Response;
 
-use johnattas\WhatsappApi\Response;
+use Johnattas\WhatsappApi\Response;
 
 final class ResponseException extends \Exception
 {

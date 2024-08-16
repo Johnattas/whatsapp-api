@@ -1,8 +1,8 @@
 <?php
 
-namespace johnattas\WhatsappApi\Request\MessageRequest;
+namespace Johnattas\WhatsappApi\Request\MessageRequest;
 
-use johnattas\WhatsappApi\Request\MessageRequest;
+use Johnattas\WhatsappApi\Request\MessageRequest;
 
 final class RequestVideoMessage extends MessageRequest
 {

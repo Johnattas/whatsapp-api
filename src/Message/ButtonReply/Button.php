@@ -1,6 +1,6 @@
 <?php
 
-namespace johnattas\WhatsappApi\Message\ButtonReply;
+namespace Johnattas\WhatsappApi\Message\ButtonReply;
 
 class Button
 {

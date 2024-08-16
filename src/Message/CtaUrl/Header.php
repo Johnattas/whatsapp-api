@@ -1,6 +1,6 @@
 <?php
 
-namespace johnattas\WhatsappApi\Message\CtaUrl;
+namespace Johnattas\WhatsappApi\Message\CtaUrl;
 
 abstract class Header
 {

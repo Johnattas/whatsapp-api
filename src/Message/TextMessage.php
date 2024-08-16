@@ -1,6 +1,6 @@
 <?php
 
-namespace johnattas\WhatsappApi\Message;
+namespace Johnattas\WhatsappApi\Message;
 
 final class TextMessage extends Message
 {

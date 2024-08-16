@@ -1,6 +1,6 @@
 <?php
 
-namespace johnattas\WhatsappApi\WebHook\Notification;
+namespace Johnattas\WhatsappApi\WebHook\Notification;
 
 final class Text extends MessageNotification
 {

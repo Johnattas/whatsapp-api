@@ -21,7 +21,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Engetec\\WhatsappApi\\": "src"
+            "Johnattas\\WhatsappApi\\": "src"
         }
     },
     "scripts": {

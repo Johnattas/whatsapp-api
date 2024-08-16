@@ -1,8 +1,8 @@
 <?php
 
-namespace johnattas\WhatsappApi\Request\BusinessProfileRequest;
+namespace Johnattas\WhatsappApi\Request\BusinessProfileRequest;
 
-use johnattas\WhatsappApi\Request;
+use Johnattas\WhatsappApi\Request;
 
 final class BusinessProfileRequest extends Request
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace johnattas\WhatsappApi\Message\OptionsList;
+namespace Johnattas\WhatsappApi\Message\OptionsList;
 
 class Section
 {

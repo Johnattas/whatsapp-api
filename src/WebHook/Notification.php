@@ -1,8 +1,8 @@
 <?php
 
-namespace johnattas\WhatsappApi\WebHook;
+namespace Johnattas\WhatsappApi\WebHook;
 
-use johnattas\WhatsappApi\WebHook\Notification\Support;
+use Johnattas\WhatsappApi\WebHook\Notification\Support;
 
 abstract class Notification
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace johnattas\WhatsappApi\Message\Contact;
+namespace Johnattas\WhatsappApi\Message\Contact;
 
 final class Phones implements \Countable, \IteratorAggregate
 {

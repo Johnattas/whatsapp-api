@@ -1,10 +1,10 @@
 <?php
 
-namespace johnattas\WhatsappApi\Message;
+namespace Johnattas\WhatsappApi\Message;
 
-use johnattas\WhatsappApi\Message\Contact\ContactName;
-use johnattas\WhatsappApi\Message\Contact\Phone;
-use johnattas\WhatsappApi\Message\Contact\Phones;
+use Johnattas\WhatsappApi\Message\Contact\ContactName;
+use Johnattas\WhatsappApi\Message\Contact\Phone;
+use Johnattas\WhatsappApi\Message\Contact\Phones;
 
 final class ContactMessage extends Message
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace johnattas\WhatsappApi\Message\Contact;
+namespace Johnattas\WhatsappApi\Message\Contact;
 
 use MyCLabs\Enum\Enum;
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace johnattas\WhatsappApi\Message;
+namespace Johnattas\WhatsappApi\Message;
 
-use johnattas\WhatsappApi\Message\CtaUrl\Header;
+use Johnattas\WhatsappApi\Message\CtaUrl\Header;
 
 final class CtaUrlMessage extends Message
 {

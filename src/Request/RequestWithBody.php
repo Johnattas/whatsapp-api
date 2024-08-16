@@ -1,6 +1,6 @@
 <?php
 
-namespace johnattas\WhatsappApi\Request;
+namespace Johnattas\WhatsappApi\Request;
 
 interface RequestWithBody
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace johnattas\WhatsappApi\Message;
+namespace Johnattas\WhatsappApi\Message;
 
-use johnattas\WhatsappApi\Message\Error\InvalidMessage;
+use Johnattas\WhatsappApi\Message\Error\InvalidMessage;
 
 final class LocationMessage extends Message
 {

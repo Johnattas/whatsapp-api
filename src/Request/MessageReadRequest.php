@@ -1,9 +1,9 @@
 <?php
 
-namespace johnattas\WhatsappApi\Request;
+namespace Johnattas\WhatsappApi\Request;
 
-use johnattas\WhatsappApi\Message\Message;
-use johnattas\WhatsappApi\Request;
+use Johnattas\WhatsappApi\Message\Message;
+use Johnattas\WhatsappApi\Request;
 
 final class MessageReadRequest extends Request implements RequestWithBody
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace johnattas\WhatsappApi\WebHook\Notification;
+namespace Johnattas\WhatsappApi\WebHook\Notification;
 
-use johnattas\WhatsappApi\WebHook\Notification\Support\Products;
+use Johnattas\WhatsappApi\WebHook\Notification\Support\Products;
 
 final class Order extends MessageNotification
 {

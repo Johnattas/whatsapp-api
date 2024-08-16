@@ -1,8 +1,8 @@
 <?php
 
-namespace johnattas\WhatsappApi\Message;
+namespace Johnattas\WhatsappApi\Message;
 
-use johnattas\WhatsappApi\Message\Media\MediaID;
+use Johnattas\WhatsappApi\Message\Media\MediaID;
 
 final class AudioMessage extends Message
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace johnattas\WhatsappApi\WebHook;
+namespace Johnattas\WhatsappApi\WebHook;
 
 final class NotificationFactory
 {

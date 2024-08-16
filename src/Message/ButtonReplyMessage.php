@@ -1,8 +1,8 @@
 <?php
 
-namespace johnattas\WhatsappApi\Message;
+namespace Johnattas\WhatsappApi\Message;
 
-use johnattas\WhatsappApi\Message\ButtonReply\ButtonAction;
+use Johnattas\WhatsappApi\Message\ButtonReply\ButtonAction;
 
 class ButtonReplyMessage extends Message
 {

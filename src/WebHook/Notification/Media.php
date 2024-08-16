@@ -1,6 +1,6 @@
 <?php
 
-namespace johnattas\WhatsappApi\WebHook\Notification;
+namespace Johnattas\WhatsappApi\WebHook\Notification;
 
 final class Media extends MessageNotification
 {

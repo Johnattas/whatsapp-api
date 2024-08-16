@@ -1,6 +1,6 @@
 <?php
 
-namespace johnattas\WhatsappApi\Http;
+namespace Johnattas\WhatsappApi\Http;
 
 final class RawResponse
 {

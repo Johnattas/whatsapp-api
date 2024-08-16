@@ -1,8 +1,8 @@
 <?php
 
-namespace johnattas\WhatsappApi\Request\MediaRequest;
+namespace Johnattas\WhatsappApi\Request\MediaRequest;
 
-use johnattas\WhatsappApi\Request;
+use Johnattas\WhatsappApi\Request;
 
 final class DownloadMediaRequest extends Request
 {
