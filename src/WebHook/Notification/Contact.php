@@ -4,19 +4,19 @@ namespace Johnattas\WhatsappApi\WebHook\Notification;
 
 final class Contact extends MessageNotification
 {
-    private array $addresses;
+    public array $addresses;
 
-    private array $emails;
+    public array $emails;
 
-    private array $name;
+    public array $name;
 
-    private array $company;
+    public array $company;
 
-    private array $phones;
+    public array $phones;
 
-    private array $urls;
+    public array $urls;
 
-    private ?\DateTimeImmutable $birthday;
+    public ?\DateTimeImmutable $birthday;
 
     public function __construct(
         string $id,

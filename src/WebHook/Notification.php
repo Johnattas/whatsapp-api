@@ -6,11 +6,13 @@ use Johnattas\WhatsappApi\WebHook\Notification\Support;
 
 abstract class Notification
 {
-    private string $id;
+    public string $id;
 
-    private Support\Business $business;
+    public string $moment, $type;
 
-    private \DateTimeImmutable $received_at;
+    public Support\Business $business;
+
+    public \DateTimeImmutable $received_at;
 
     public function __construct(string $id, Support\Business $business, string $received_at_timestamp)
     {

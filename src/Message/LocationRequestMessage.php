@@ -7,9 +7,9 @@ final class LocationRequestMessage extends Message
     /**
      * {@inheritdoc}
      */
-    protected string $type = 'location_request_message';
+    public string $type = 'location_request_message';
 
-    private string $body;
+    public string $body;
 
     /**
      * {@inheritdoc}

@@ -4,10 +4,10 @@ namespace Johnattas\WhatsappApi\Message\OptionsList;
 
 class Action
 {
-    protected string $button;
+    public string $button;
 
     /** @var Section[] */
-    protected array $sections;
+    public array $sections;
 
     public function __construct(string $button, array $sections)
     {

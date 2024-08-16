@@ -7,11 +7,11 @@ final class ReactionMessage extends Message
     /**
      * {@inheritdoc}
      */
-    protected string $type = 'reaction';
+    public string $type = 'reaction';
 
-    private $emoji;
+    public $emoji;
 
-    private $message_id;
+    public $message_id;
 
     /**
      * {@inheritdoc}

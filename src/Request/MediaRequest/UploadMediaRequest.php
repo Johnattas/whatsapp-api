@@ -10,12 +10,12 @@ final class UploadMediaRequest extends Request
     /**
      * @var string File path of file will sent.
      */
-    private string $file_path;
+    public string $file_path;
 
     /**
     * @var string WhatsApp Number Id from messages will sent.
     */
-    private string $phone_number_id;
+    public string $phone_number_id;
 
     /**
      * Creates a new Media Request instance.

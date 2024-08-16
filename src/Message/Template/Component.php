@@ -7,17 +7,17 @@ final class Component
     /**
      * Parameters of a header template.
      */
-    private array $header;
+    public array $header;
 
     /**
      * Parameters of a body template.
      */
-    private array $body;
+    public array $body;
 
     /**
      * Buttons to attach to a template.
      */
-    private array $buttons;
+    public array $buttons;
 
     public function __construct(array $header = [], array $body = [], array $buttons = [])
     {

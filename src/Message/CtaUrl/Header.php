@@ -4,9 +4,9 @@ namespace Johnattas\WhatsappApi\Message\CtaUrl;
 
 abstract class Header
 {
-    protected string $type;
+    public string $type;
 
-    protected function __construct(string $type)
+    public function __construct(string $type)
     {
         $this->type = $type;
     }

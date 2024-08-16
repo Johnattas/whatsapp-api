@@ -4,11 +4,11 @@ namespace Johnattas\WhatsappApi\Message\Contact;
 
 final class Phone
 {
-    private string $number;
+    public string $number;
 
-    private string $wa_id;
+    public string $wa_id;
 
-    private PhoneType $type;
+    public PhoneType $type;
 
     public function __construct(string $number, PhoneType $type, string $wa_id = '')
     {

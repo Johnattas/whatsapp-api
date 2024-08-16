@@ -4,9 +4,9 @@ namespace Johnattas\WhatsappApi\WebHook\Notification;
 
 final class Button extends MessageNotification
 {
-    private string $text;
+    public string $text;
 
-    private string $payload;
+    public string $payload;
 
     public function __construct(
         string $id,

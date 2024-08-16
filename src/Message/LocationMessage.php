@@ -9,18 +9,18 @@ final class LocationMessage extends Message
     /**
     * {@inheritdoc}
     */
-    protected string $type = 'location';
+    public string $type = 'location';
 
-    private float $longitude;
+    public float $longitude;
 
-    private float $latitude;
+    public float $latitude;
 
     /**
      * Name of the location
      */
-    private string $name;
+    public string $name;
 
-    private string $address;
+    public string $address;
 
     /**
     * {@inheritdoc}

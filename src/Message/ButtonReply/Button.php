@@ -4,8 +4,8 @@ namespace Johnattas\WhatsappApi\Message\ButtonReply;
 
 class Button
 {
-    private $id;
-    private $title;
+    public $id;
+    public $title;
 
     public function __construct(string $id, string $title)
     {

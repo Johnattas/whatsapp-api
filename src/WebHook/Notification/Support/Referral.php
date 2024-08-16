@@ -4,21 +4,21 @@ namespace Johnattas\WhatsappApi\WebHook\Notification\Support;
 
 final class Referral
 {
-    private string $source_id;
+    public string $source_id;
 
-    private string $source_url;
+    public string $source_url;
 
-    private string $source_type;
+    public string $source_type;
 
-    private string $headline;
+    public string $headline;
 
-    private string $body;
+    public string $body;
 
-    private string $media_type;
+    public string $media_type;
 
-    private string $media_url;
+    public string $media_url;
 
-    private string $thumbnail_url;
+    public string $thumbnail_url;
 
     public function __construct(
         string $source_id,

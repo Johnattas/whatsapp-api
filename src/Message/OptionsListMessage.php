@@ -9,15 +9,15 @@ final class OptionsListMessage extends Message
     /**
     * {@inheritdoc}
     */
-    protected string $type = 'list';
+    public string $type = 'list';
 
-    private string $header;
+    public string $header;
 
-    private string $body;
+    public string $body;
 
-    private string $footer;
+    public string $footer;
 
-    private Action $action;
+    public Action $action;
 
     /**
     * {@inheritdoc}

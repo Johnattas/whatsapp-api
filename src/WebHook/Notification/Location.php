@@ -4,13 +4,13 @@ namespace Johnattas\WhatsappApi\WebHook\Notification;
 
 final class Location extends MessageNotification
 {
-    private string $latitude;
+    public string $latitude;
 
-    private string $longitude;
+    public string $longitude;
 
-    private string $name;
+    public string $name;
 
-    private string $address;
+    public string $address;
 
     public function __construct(
         string $id,

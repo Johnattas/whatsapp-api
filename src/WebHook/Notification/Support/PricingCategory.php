@@ -11,13 +11,13 @@ namespace Johnattas\WhatsappApi\WebHook\Notification\Support;
  */
 final class PricingCategory extends \MyCLabs\Enum\Enum
 {
-    private const AUTHENTICATION = 'authentication';
+    public const AUTHENTICATION = 'authentication';
 
-    private const MARKETING = 'marketing';
+    public const MARKETING = 'marketing';
 
-    private const UTILITY = 'utility';
+    public const UTILITY = 'utility';
 
-    private const SERVICE = 'service';
+    public const SERVICE = 'service';
 
-    private const REFERRAL_INITIATED = 'referral_conversion';
+    public const REFERRAL_INITIATED = 'referral_conversion';
 }

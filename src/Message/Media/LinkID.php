@@ -9,7 +9,7 @@ final class LinkID extends MediaID
     /**
     * {@inheritdoc}
     */
-    protected string $type = 'link';
+    public string $type = 'link';
 
     /**
      * Creates a new Message class.

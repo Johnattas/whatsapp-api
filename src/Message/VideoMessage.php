@@ -9,19 +9,19 @@ final class VideoMessage extends Message
     /**
     * {@inheritdoc}
     */
-    protected string $type = 'video';
+    public string $type = 'video';
 
     /**
      * Describes the specified document.
      */
-    private string $caption;
+    public string $caption;
 
     /**
     * Document identifier: WhatsApp Media ID or any Internet public link document.
     *
     * You can get a WhatsApp Media ID uploading the document to the WhatsApp Cloud servers.
     */
-    private MediaID $id;
+    public MediaID $id;
 
     /**
     * {@inheritdoc}

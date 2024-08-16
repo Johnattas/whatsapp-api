@@ -4,7 +4,7 @@ namespace Johnattas\WhatsappApi\Message\CtaUrl;
 
 final class TitleHeader extends Header
 {
-    protected string $title;
+    public string $title;
 
     public function __construct(string $title)
     {

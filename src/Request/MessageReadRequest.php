@@ -10,12 +10,12 @@ final class MessageReadRequest extends Request implements RequestWithBody
     /**
      * @var string WhatsApp Message Id will be marked as read.
      */
-    private string $message_id;
+    public string $message_id;
 
     /**
      * @var string WhatsApp Number Id from messages will sent.
      */
-    private string $from_phone_number_id;
+    public string $from_phone_number_id;
 
     public function __construct(string $message_id, string $access_token, string $from_phone_number_id, ?int $timeout = null)
     {

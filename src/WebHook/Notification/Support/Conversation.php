@@ -4,11 +4,11 @@ namespace Johnattas\WhatsappApi\WebHook\Notification\Support;
 
 final class Conversation
 {
-    private string $id;
+    public string $id;
 
-    private ConversationType $type;
+    public ConversationType $type;
 
-    private ?\DateTimeImmutable $expires_at;
+    public ?\DateTimeImmutable $expires_at;
 
     public function __construct(string $id, string $type, ?string $expires_at = null)
     {

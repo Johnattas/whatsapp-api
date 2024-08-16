@@ -4,8 +4,9 @@ namespace Johnattas\WhatsappApi\WebHook;
 
 final class NotificationFactory
 {
-    private Notification\MessageNotificationFactory $message_notification_factory;
-    private Notification\StatusNotificationFactory $status_notification_factory;
+    public Notification\MessageNotificationFactory $message_notification_factory;
+    public Notification\StatusNotificationFactory $status_notification_factory;
+
 
     public function __construct()
     {
@@ -13,18 +14,12 @@ final class NotificationFactory
         $this->status_notification_factory = new Notification\StatusNotificationFactory();
     }
 
-    public function buildFromPayload(array $payload): ?Notification
-    {
-        $notifications = $this->buildAllFromPayload($payload);
-
-        return $notifications[0] ?? null;
-    }
-
     /**
      * @return Notification[]
      */
-    public function buildAllFromPayload(array $payload): array
+    public function buildAllFromPayload(array $payload)
     {
+
         if (!is_array($payload['entry'] ?? null)) {
             return [];
         }
@@ -32,6 +27,9 @@ final class NotificationFactory
         $notifications = [];
 
         foreach ($payload['entry'] as $entry) {
+
+
+
             if (!is_array($entry['changes'])) {
                 continue;
             }
@@ -43,11 +41,17 @@ final class NotificationFactory
                 $metadata = $change['value']['metadata'] ?? [];
 
                 if ($message) {
-                    $notifications[] = $this->message_notification_factory->buildFromPayload($metadata, $message, $contact);
+                    $temp = $this->message_notification_factory->buildFromPayload($metadata, $message, $contact);
+                    $temp->moment = 'receive';
+                    $temp->type = $message['type'];
+                    $notifications[] = $temp;
                 }
 
                 if ($status) {
-                    $notifications[] = $this->status_notification_factory->buildFromPayload($metadata, $status);
+                    $temp = $this->status_notification_factory->buildFromPayload($metadata, $status);
+                    $temp->moment = 'status';
+                    $notifications[] = $temp;
+
                 }
             }
         }

@@ -9,24 +9,24 @@ final class DocumentMessage extends Message
     /**
     * {@inheritdoc}
     */
-    protected string $type = 'document';
+    public string $type = 'document';
 
     /**
     * Document identifier: WhatsApp Media ID or any Internet public link document.
     *
     * You can get a WhatsApp Media ID uploading the document to the WhatsApp Cloud servers.
     */
-    private MediaID $id;
+    public MediaID $id;
 
     /**
      * Describes the filename for the specific document: eg. my-document.pdf.
      */
-    private string $name;
+    public string $name;
 
     /**
      * Describes the specified document.
      */
-    private ?string $caption;
+    public ?string $caption;
 
     /**
     * {@inheritdoc}

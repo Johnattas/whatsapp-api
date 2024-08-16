@@ -4,9 +4,9 @@ namespace Johnattas\WhatsappApi\WebHook\Notification\Support;
 
 final class ReferredProduct
 {
-    private string $catalog_id;
+    public string $catalog_id;
 
-    private string $product_retailer_id;
+    public string $product_retailer_id;
 
     public function __construct(string $catalog_id, string $product_retailer_id)
     {

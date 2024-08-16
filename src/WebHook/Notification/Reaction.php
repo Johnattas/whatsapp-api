@@ -4,9 +4,9 @@ namespace Johnattas\WhatsappApi\WebHook\Notification;
 
 final class Reaction extends MessageNotification
 {
-    private string $message_id;
+    public string $message_id;
 
-    private string $emoji;
+    public string $emoji;
 
     public function __construct(
         string $id,

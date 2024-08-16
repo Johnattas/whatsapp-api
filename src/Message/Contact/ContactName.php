@@ -4,9 +4,9 @@ namespace Johnattas\WhatsappApi\Message\Contact;
 
 final class ContactName
 {
-    private string $first_name;
+    public string $first_name;
 
-    private string $last_name;
+    public string $last_name;
 
     public function __construct(string $first_name, string $last_name = '')
     {

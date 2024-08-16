@@ -7,17 +7,17 @@ final class RawResponse
     /**
      * @var array The response headers in the form of an associative array.
      */
-    private array $headers;
+    public array $headers;
 
     /**
      * @var string The raw response body.
      */
-    private string $body;
+    public string $body;
 
     /**
      * @var int The HTTP status response code.
      */
-    private $http_response_code;
+    public $http_response_code;
 
     /**
      * Creates a new GraphRawResponse entity.
@@ -88,7 +88,7 @@ final class RawResponse
      *
      * @param string $raw_headers The raw headers from the response.
      */
-    protected function setHeadersFromString($raw_headers)
+    public function setHeadersFromString($raw_headers)
     {
         // Normalize line breaks
         $raw_headers = str_replace("\r\n", "\n", $raw_headers);

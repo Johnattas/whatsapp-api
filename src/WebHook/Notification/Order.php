@@ -6,9 +6,9 @@ use Johnattas\WhatsappApi\WebHook\Notification\Support\Products;
 
 final class Order extends MessageNotification
 {
-    private string $catalog_id;
-    private string $message;
-    private Products $products;
+    public string $catalog_id;
+    public string $message;
+    public Products $products;
 
     public function __construct(
         string $id,

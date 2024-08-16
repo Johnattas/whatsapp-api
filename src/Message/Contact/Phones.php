@@ -4,7 +4,7 @@ namespace Johnattas\WhatsappApi\Message\Contact;
 
 final class Phones implements \Countable, \IteratorAggregate
 {
-    private array $phones;
+    public array $phones;
 
     public function __construct(Phone ...$phones)
     {

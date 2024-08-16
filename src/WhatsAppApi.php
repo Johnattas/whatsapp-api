@@ -20,22 +20,22 @@ class WhatsAppApi
     /**
      * @var WhatsAppApiApp The WhatsAppApiApp entity.
      */
-    protected WhatsAppApiApp $app;
+    public WhatsAppApiApp $app;
 
     /**
      * @var Client The WhatsApp Cloud Api client service.
      */
-    protected Client $client;
+    public Client $client;
 
     /**
      * @var int The WhatsApp Cloud Api client timeout.
      */
-    protected ?int $timeout;
+    public ?int $timeout;
 
     /**
      * The WhatsApp Message ID to reply to.
      */
-    private ?string $reply_to = null;
+    public ?string $reply_to = null;
 
     /**
      * Instantiates a new WhatsAppdApi super-class object.

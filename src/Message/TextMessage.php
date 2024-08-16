@@ -7,22 +7,22 @@ final class TextMessage extends Message
     /**
      * @const int Maximum length for body message.
      */
-    private const MAXIMUM_LENGTH = 4096;
+    public const MAXIMUM_LENGTH = 4096;
 
     /**
     * {@inheritdoc}
     */
-    protected string $type = 'text';
+    public string $type = 'text';
 
     /**
      * @var string The body of the text message.
      */
-    private string $text;
+    public string $text;
 
     /**
      * @var bool Determines if show a preview box for URLs contained in the text message.
      */
-    private bool $preview_url;
+    public bool $preview_url;
 
     /**
      * Creates a new message of type text.
@@ -61,7 +61,7 @@ final class TextMessage extends Message
         return $this->preview_url;
     }
 
-    private function assertTextIsValid(string $text): void
+    public function assertTextIsValid(string $text): void
     {
         if (strlen($text) > self::MAXIMUM_LENGTH) {
             throw new \LengthException('The maximun length for a message text is ' . self::MAXIMUM_LENGTH . ' characters');

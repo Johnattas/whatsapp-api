@@ -10,11 +10,11 @@ namespace Johnattas\WhatsappApi\WebHook\Notification\Support;
  */
 final class Status extends \MyCLabs\Enum\Enum
 {
-    private const DELIVERED = 'delivered';
+    public const DELIVERED = 'delivered';
 
-    private const READ = 'read';
+    public const READ = 'read';
 
-    private const SENT = 'sent';
+    public const SENT = 'sent';
 
-    private const FAILED = 'failed';
+    public const FAILED = 'failed';
 }

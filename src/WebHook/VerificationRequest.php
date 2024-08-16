@@ -8,7 +8,7 @@ final class VerificationRequest
      * Verify Token field configured in your app's App Dashboard.
      * @link https://developers.facebook.com/docs/graph-api/webhooks/getting-started?locale=en_US#configure-webhooks-product
      */
-    protected string $verify_token;
+    public string $verify_token;
 
     public function __construct(string $verify_token)
     {

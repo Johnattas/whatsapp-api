@@ -6,15 +6,15 @@ use Johnattas\WhatsappApi\Message\ButtonReply\ButtonAction;
 
 class ButtonReplyMessage extends Message
 {
-    protected string $type = 'button';
+    public string $type = 'button';
 
-    private ?string $header;
+    public ?string $header;
 
-    private string $body;
+    public string $body;
 
-    private ?string $footer;
+    public ?string $footer;
 
-    private ButtonAction $action;
+    public ButtonAction $action;
 
     public function __construct(string $to, string $body, ButtonAction $action, ?string $header = null, ?string $footer = null, ?string $reply_to = null)
     {

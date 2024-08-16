@@ -10,27 +10,27 @@ class Response
     /**
      * @var int The HTTP status code response from Graph.
      */
-    protected int $http_status_code;
+    public int $http_status_code;
 
     /**
      * @var array The headers returned from Graph.
      */
-    protected array $headers;
+    public array $headers;
 
     /**
      * @var string The raw body of the response from Graph.
      */
-    protected string $body;
+    public string $body;
 
     /**
      * @var array The decoded body of the Graph response.
      */
-    protected array $decoded_body = [];
+    public array $decoded_body = [];
 
     /**
      * @var Request The original request that returned this response.
      */
-    protected Request $request;
+    public Request $request;
 
     /**
      * Creates a new Response entity.

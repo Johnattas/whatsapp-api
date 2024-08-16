@@ -10,7 +10,7 @@ final class GuzzleClientHandler implements ClientHandler
     /**
      * @var \GuzzleHttp\Client The Guzzle client.
      */
-    private $guzzle_client;
+    public $guzzle_client;
 
     /**
      * @param \GuzzleHttp\Client|null The Guzzle client.
@@ -57,7 +57,7 @@ final class GuzzleClientHandler implements ClientHandler
         return $this->buildResponse($raw_handler_response);
     }
 
-    protected function post(string $url, array $data, string $data_type, array $headers, int $timeout): ResponseInterface
+    public function post(string $url, array $data, string $data_type, array $headers, int $timeout): ResponseInterface
     {
         return $this->guzzle_client->post($url, [
             $data_type => $data,
@@ -67,7 +67,7 @@ final class GuzzleClientHandler implements ClientHandler
         ]);
     }
 
-    protected function buildResponse(ResponseInterface $handler_response): RawResponse
+    public function buildResponse(ResponseInterface $handler_response): RawResponse
     {
         return new RawResponse(
             $handler_response->getHeaders(),

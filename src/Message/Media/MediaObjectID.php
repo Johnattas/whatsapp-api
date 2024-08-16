@@ -7,5 +7,5 @@ final class MediaObjectID extends MediaID
     /**
     * {@inheritdoc}
     */
-    protected string $type = 'id';
+    public string $type = 'id';
 }

@@ -4,11 +4,11 @@ namespace Johnattas\WhatsappApi\WebHook\Notification;
 
 final class Flow extends MessageNotification
 {
-    private string $name;
+    public string $name;
 
-    private string $body;
+    public string $body;
 
-    private string $response;
+    public string $response;
 
     public function __construct(
         string $id,

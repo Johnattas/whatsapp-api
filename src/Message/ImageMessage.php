@@ -9,19 +9,19 @@ final class ImageMessage extends Message
     /**
     * {@inheritdoc}
     */
-    protected string $type = 'image';
+    public string $type = 'image';
 
     /**
     * Document identifier: WhatsApp Media ID or any Internet public link document.
     *
     * You can get a WhatsApp Media ID uploading the document to the WhatsApp Cloud servers.
     */
-    private MediaID $id;
+    public MediaID $id;
 
     /**
      * Describes the specified document.
      */
-    private ?string $caption;
+    public ?string $caption;
 
     /**
     * {@inheritdoc}

@@ -4,7 +4,7 @@ namespace Johnattas\WhatsappApi\Message\ButtonReply;
 
 class ButtonAction
 {
-    private $buttons;
+    public $buttons;
 
     public function __construct(array $buttons)
     {

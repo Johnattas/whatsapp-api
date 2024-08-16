@@ -11,7 +11,7 @@ class MessageNotificationFactory
         return $this->decorateNotification($notification, $message, $contact);
     }
 
-    private function buildMessageNotification(array $metadata, array $message): MessageNotification
+    public function buildMessageNotification(array $metadata, array $message): MessageNotification
     {
         switch ($message['type']) {
             case 'text':
@@ -125,7 +125,7 @@ class MessageNotificationFactory
         }
     }
 
-    private function decorateNotification(MessageNotification $notification, array $message, array $contact): MessageNotification
+    public function decorateNotification(MessageNotification $notification, array $message, array $contact): MessageNotification
     {
         if ($contact) {
             $notification->withCustomer(new Support\Customer(

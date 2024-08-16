@@ -22,17 +22,17 @@ class WhatsAppApiApp
     /**
      * @const string Facebook Phone Number ID.
      */
-    protected string $from_phone_number_id;
+    public string $from_phone_number_id;
 
     /**
      * @const string Facebook Whatsapp Access Token.
      */
-    protected string $access_token;
+    public string $access_token;
 
     /**
      * @const string Whatsapp Business ID.
      */
-    protected string $business_id;
+    public string $business_id;
 
     /**
      * Sends a Whatsapp text message.
@@ -83,12 +83,12 @@ class WhatsAppApiApp
         return $this->business_id;
     }
 
-    private function validate(string $from_phone_number_id, string $access_token, string $business_id): void
+    public function validate(string $from_phone_number_id, string $access_token, string $business_id): void
     {
         // validate by function type hinting
     }
 
-    private function loadEnv(): void
+    public function loadEnv(): void
     {
         $dotenv = \Dotenv\Dotenv::createImmutable(__DIR__);
         $dotenv->safeLoad();

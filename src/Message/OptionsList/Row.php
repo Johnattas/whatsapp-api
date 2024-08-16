@@ -4,11 +4,11 @@ namespace Johnattas\WhatsappApi\Message\OptionsList;
 
 class Row
 {
-    protected string $id;
+    public string $id;
 
-    protected string $title;
+    public string $title;
 
-    protected ?string $description;
+    public ?string $description;
 
     public function __construct(string $id, string $title, ?string $description = null)
     {

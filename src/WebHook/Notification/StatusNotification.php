@@ -6,15 +6,15 @@ use Johnattas\WhatsappApi\WebHook\Notification;
 
 final class StatusNotification extends Notification
 {
-    private ?Support\Conversation $conversation = null;
+    public ?Support\Conversation $conversation = null;
 
-    private ?Support\Pricing $pricing = null;
+    public ?Support\Pricing $pricing = null;
 
-    private string $customer_id;
+    public string $customer_id;
 
-    private Support\Status $status;
+    public Support\Status $status;
 
-    private ?Support\Error $error = null;
+    public ?Support\Error $error = null;
 
     public function __construct(
         string $id,

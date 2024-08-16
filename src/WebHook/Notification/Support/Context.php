@@ -4,11 +4,11 @@ namespace Johnattas\WhatsappApi\WebHook\Notification\Support;
 
 final class Context
 {
-    private ?string $replying_to_message_id;
+    public ?string $replying_to_message_id;
 
-    private bool $forwarded;
+    public bool $forwarded;
 
-    private ?ReferredProduct $referred_product;
+    public ?ReferredProduct $referred_product;
 
     public function __construct(
         string $replying_to_message_id = null,

@@ -15,12 +15,12 @@ class Client
     /**
      * @var ClientHandler The HTTP client handler to send the request.
      */
-    protected ClientHandler $handler;
+    public ClientHandler $handler;
 
     /**
      * @var string Graph API version used.
      */
-    protected string $graph_version;
+    public string $graph_version;
 
     /**
      * Creates a new HTTP Client.
@@ -177,17 +177,17 @@ class Client
         return $return_response;
     }
 
-    private function defaultHandler(): ClientHandler
+    public function defaultHandler(): ClientHandler
     {
         return new GuzzleClientHandler();
     }
 
-    private function buildBaseUri(): string
+    public function buildBaseUri(): string
     {
         return self::BASE_GRAPH_URL . '/' . $this->graph_version;
     }
 
-    private function buildRequestUri(string $node_path): string
+    public function buildRequestUri(string $node_path): string
     {
         return $this->buildBaseUri() . '/' . $node_path;
     }

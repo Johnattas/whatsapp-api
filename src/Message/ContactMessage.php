@@ -11,11 +11,11 @@ final class ContactMessage extends Message
     /**
     * {@inheritdoc}
     */
-    protected string $type = 'contacts';
+    public string $type = 'contacts';
 
-    private ContactName $name;
+    public ContactName $name;
 
-    private Phones $phones;
+    public Phones $phones;
 
     /**
     * {@inheritdoc}

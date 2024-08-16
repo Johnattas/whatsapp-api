@@ -4,11 +4,11 @@ namespace Johnattas\WhatsappApi\WebHook\Notification\Support;
 
 final class Pricing
 {
-    private PricingCategory $category;
+    public PricingCategory $category;
 
-    private string $model;
+    public string $model;
 
-    private bool $billable;
+    public bool $billable;
 
     public function __construct(string $category, string $model, bool $billable)
     {

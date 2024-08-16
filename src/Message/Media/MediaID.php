@@ -7,12 +7,12 @@ abstract class MediaID
     /**
      * Type of media identifier: id or link.
      */
-    protected string $type;
+    public string $type;
 
     /**
      * Value of the identifier
      */
-    private string $value;
+    public string $value;
 
     public function __construct(string $id)
     {

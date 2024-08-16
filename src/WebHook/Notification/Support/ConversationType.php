@@ -9,17 +9,17 @@ namespace Johnattas\WhatsappApi\WebHook\Notification\Support;
  */
 final class ConversationType extends \MyCLabs\Enum\Enum
 {
-    private const BUSINESS_INITIATED = 'business_initiated';
+    public const BUSINESS_INITIATED = 'business_initiated';
 
-    private const CUSTOMER_INITIATED = 'user_initiated';
+    public const CUSTOMER_INITIATED = 'user_initiated';
 
-    private const REFERRAL_INITIATED = 'referral_conversion';
+    public const REFERRAL_INITIATED = 'referral_conversion';
 
-    private const AUTHENTICATION = 'authentication';
+    public const AUTHENTICATION = 'authentication';
 
-    private const MARKETING = 'marketing';
+    public const MARKETING = 'marketing';
 
-    private const UTILITY = 'utility';
+    public const UTILITY = 'utility';
 
-    private const SERVICE = 'service';
+    public const SERVICE = 'service';
 }

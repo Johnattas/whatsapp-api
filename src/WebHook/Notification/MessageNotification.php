@@ -6,11 +6,11 @@ use Johnattas\WhatsappApi\WebHook\Notification;
 
 abstract class MessageNotification extends Notification
 {
-    protected ?Support\Context $context = null;
+    public ?Support\Context $context = null;
 
-    protected ?Support\Customer $customer = null;
+    public ?Support\Customer $customer = null;
 
-    protected ?Support\Referral $referral = null;
+    public ?Support\Referral $referral = null;
 
     public function customer(): ?Support\Customer
     {

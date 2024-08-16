@@ -4,9 +4,9 @@ namespace Johnattas\WhatsappApi\WebHook\Notification\Support;
 
 final class Error
 {
-    protected int $code;
+    public int $code;
 
-    protected string $title;
+    public string $title;
 
     public function __construct(int $code, string $title)
     {

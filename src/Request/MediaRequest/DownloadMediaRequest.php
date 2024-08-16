@@ -9,7 +9,7 @@ final class DownloadMediaRequest extends Request
     /**
      * @var string Id of the media uploaded to the Facebook servers.
      */
-    private string $media_id;
+    public string $media_id;
 
     /**
      * Creates a new Media Request instance.

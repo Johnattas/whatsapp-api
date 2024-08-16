@@ -9,14 +9,14 @@ final class AudioMessage extends Message
     /**
     * {@inheritdoc}
     */
-    protected string $type = 'audio';
+    public string $type = 'audio';
 
     /**
     * Document identifier: WhatsApp Media ID or any Internet public link document.
     *
     * You can get a WhatsApp Media ID uploading the document to the WhatsApp Cloud servers.
     */
-    private MediaID $id;
+    public MediaID $id;
 
     /**
     * {@inheritdoc}

@@ -4,11 +4,11 @@ namespace Johnattas\WhatsappApi\WebHook\Notification;
 
 final class Interactive extends MessageNotification
 {
-    private string $item_id;
+    public string $item_id;
 
-    private string $title;
+    public string $title;
 
-    private string $description;
+    public string $description;
 
     public function __construct(
         string $id,

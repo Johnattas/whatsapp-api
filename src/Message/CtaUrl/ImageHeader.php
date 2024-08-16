@@ -4,7 +4,7 @@ namespace Johnattas\WhatsappApi\Message\CtaUrl;
 
 final class ImageHeader extends Header
 {
-    protected string $link;
+    public string $link;
 
     public function __construct(string $link)
     {

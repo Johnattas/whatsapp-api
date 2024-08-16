@@ -9,12 +9,12 @@ final class UpdateBusinessProfileRequest extends Request
     /**
      * @var array Whatsapp profile information.
      */
-    private array $information;
+    public array $information;
 
     /**
      * @var string WhatsApp Number Id from messages will sent.
      */
-    private string $from_phone_number_id;
+    public string $from_phone_number_id;
 
     public function __construct(array $information, string $access_token, string $from_phone_number_id, ?int $timeout = null)
     {

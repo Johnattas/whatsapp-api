@@ -4,15 +4,15 @@ namespace Johnattas\WhatsappApi\WebHook\Notification;
 
 final class Media extends MessageNotification
 {
-    private string $image_id;
+    public string $image_id;
 
-    private string $mime_type;
+    public string $mime_type;
 
-    private string $sha256;
+    public string $sha256;
 
-    private string $filename;
+    public string $filename;
 
-    private string $caption;
+    public string $caption;
 
     public function __construct(
         string $id,

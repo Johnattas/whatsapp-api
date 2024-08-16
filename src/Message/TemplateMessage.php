@@ -9,24 +9,24 @@ final class TemplateMessage extends Message
     /**
     * {@inheritdoc}
     */
-    protected string $type = 'template';
+    public string $type = 'template';
 
     /**
      * Name of the template
      * @link https://business.facebook.com/wa/manage/message-templates/ Dashboard to manage (create, edit and delete) templates.
      */
-    private string $name;
+    public string $name;
 
     /**
      * @link https://developers.facebook.com/docs/whatsapp/api/messages/message-templates#supported-languages See supported language codes.
      */
-    private string $language;
+    public string $language;
 
     /**
      * Templates header, body and buttons can be personalized
      * @link https://developers.facebook.com/docs/whatsapp/cloud-api/guides/send-message-templates See how you can personalized your templates.
      */
-    private ?Component $components;
+    public ?Component $components;
 
     /**
     * {@inheritdoc}

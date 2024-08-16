@@ -7,13 +7,13 @@ final class CatalogMessage extends Message
     /**
      * {@inheritdoc}
      */
-    protected string $type = 'catalog_message';
+    public string $type = 'catalog_message';
 
-    private string $body;
+    public string $body;
 
-    private ?string $footer;
+    public ?string $footer;
 
-    private ?string $thumbnail_product_retailer_id;
+    public ?string $thumbnail_product_retailer_id;
 
     /**
      * {@inheritdoc}

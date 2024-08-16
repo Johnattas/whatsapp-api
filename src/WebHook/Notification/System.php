@@ -4,9 +4,9 @@ namespace Johnattas\WhatsappApi\WebHook\Notification;
 
 final class System extends MessageNotification
 {
-    private string $message;
+    public string $message;
 
-    private Support\Business $old_business_data;
+    public Support\Business $old_business_data;
 
     public function __construct(string $id, Support\Business $business, Support\Business $old_business_data, string $message, string $received_at_timestamp)
     {

@@ -9,12 +9,12 @@ final class ResponseException extends \Exception
     /**
      * @var Response The response that threw the exception.
      */
-    private $response;
+    public $response;
 
     /**
      * @var array Decoded response.
      */
-    private $response_data;
+    public $response_data;
 
     /**
      * Creates a ResponseException.

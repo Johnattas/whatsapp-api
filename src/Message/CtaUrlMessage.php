@@ -9,17 +9,17 @@ final class CtaUrlMessage extends Message
     /**
     * {@inheritdoc}
     */
-    protected string $type = 'cta_url';
+    public string $type = 'cta_url';
 
-    private string $displayText;
+    public string $displayText;
 
-    private string $url;
+    public string $url;
 
-    private ?Header $header = null;
+    public ?Header $header = null;
 
-    private ?string $body = null;
+    public ?string $body = null;
 
-    private ?string $footer = null;
+    public ?string $footer = null;
 
     /**
     * {@inheritdoc}

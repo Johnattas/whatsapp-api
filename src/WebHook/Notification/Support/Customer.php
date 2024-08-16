@@ -4,11 +4,11 @@ namespace Johnattas\WhatsappApi\WebHook\Notification\Support;
 
 final class Customer
 {
-    private string $id;
+    public string $id;
 
-    private string $name;
+    public string $name;
 
-    private string $phone_number;
+    public string $phone_number;
 
     public function __construct(string $id, string $name, string $phone_number)
     {

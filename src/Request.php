@@ -12,14 +12,14 @@ abstract class Request
     /**
      * @var string The access token to use for this request.
      */
-    private string $access_token;
+    public string $access_token;
 
     /**
      * The timeout request.
      *
      * @return int
      */
-    private int $timeout;
+    public int $timeout;
 
     /**
      * Creates a new Request entity.
