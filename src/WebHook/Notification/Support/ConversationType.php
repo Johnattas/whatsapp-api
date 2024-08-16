@@ -1,6 +1,6 @@
 <?php
 
-namespace Engetec\WhatsappApi\WebHook\Notification\Support;
+namespace johnattas\WhatsappApi\WebHook\Notification\Support;
 
 /**
  * @method static ConversationType BUSINESS_INITIATED()

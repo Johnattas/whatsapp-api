@@ -1,6 +1,6 @@
 <?php
 
-namespace Engetec\WhatsappApi\Message\Contact;
+namespace johnattas\WhatsappApi\Message\Contact;
 
 final class Phone
 {

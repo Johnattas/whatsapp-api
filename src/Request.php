@@ -1,6 +1,6 @@
 <?php
 
-namespace Engetec\WhatsappApi;
+namespace johnattas\WhatsappApi;
 
 abstract class Request
 {

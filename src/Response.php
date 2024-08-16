@@ -1,9 +1,9 @@
 <?php
 
-namespace Engetec\WhatsappApi;
+namespace johnattas\WhatsappApi;
 
-use Engetec\WhatsappApi\Http\RawResponse;
-use Engetec\WhatsappApi\Response\ResponseException;
+use johnattas\WhatsappApi\Http\RawResponse;
+use johnattas\WhatsappApi\Response\ResponseException;
 
 class Response
 {

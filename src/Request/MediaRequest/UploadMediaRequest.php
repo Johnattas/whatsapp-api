@@ -1,9 +1,9 @@
 <?php
 
-namespace Engetec\WhatsappApi\Request\MediaRequest;
+namespace johnattas\WhatsappApi\Request\MediaRequest;
 
 use GuzzleHttp\Psr7;
-use Engetec\WhatsappApi\Request;
+use johnattas\WhatsappApi\Request;
 
 final class UploadMediaRequest extends Request
 {

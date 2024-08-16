@@ -1,10 +1,10 @@
 <?php
 
-namespace Engetec\WhatsappApi;
+namespace johnattas\WhatsappApi;
 
-use Engetec\WhatsappApi\WebHook\Notification;
-use Engetec\WhatsappApi\WebHook\NotificationFactory;
-use Engetec\WhatsappApi\WebHook\VerificationRequest;
+use johnattas\WhatsappApi\WebHook\Notification;
+use johnattas\WhatsappApi\WebHook\NotificationFactory;
+use johnattas\WhatsappApi\WebHook\VerificationRequest;
 
 class WebHook
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Engetec\WhatsappApi\Message;
+namespace johnattas\WhatsappApi\Message;
 
-use Engetec\WhatsappApi\Message\OptionsList\Action;
+use johnattas\WhatsappApi\Message\OptionsList\Action;
 
 final class OptionsListMessage extends Message
 {

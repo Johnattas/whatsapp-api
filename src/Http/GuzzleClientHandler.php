@@ -1,6 +1,6 @@
 <?php
 
-namespace Engetec\WhatsappApi\Http;
+namespace johnattas\WhatsappApi\Http;
 
 use GuzzleHttp\Client;
 use Psr\Http\Message\ResponseInterface;

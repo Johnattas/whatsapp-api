@@ -1,8 +1,8 @@
 <?php
 
-namespace Engetec\WhatsappApi\Request\MessageRequest;
+namespace johnattas\WhatsappApi\Request\MessageRequest;
 
-use Engetec\WhatsappApi\Request\MessageRequest;
+use johnattas\WhatsappApi\Request\MessageRequest;
 
 final class RequestLocationMessage extends MessageRequest
 {

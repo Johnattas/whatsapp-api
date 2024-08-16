@@ -1,6 +1,6 @@
 <?php
 
-namespace Engetec\WhatsappApi\Message\CtaUrl;
+namespace johnattas\WhatsappApi\Message\CtaUrl;
 
 final class ImageHeader extends Header
 {

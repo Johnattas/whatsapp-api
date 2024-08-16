@@ -1,8 +1,8 @@
 <?php
 
-namespace Engetec\WhatsappApi\Message;
+namespace johnattas\WhatsappApi\Message;
 
-use Engetec\WhatsappApi\Message\Template\Component;
+use johnattas\WhatsappApi\Message\Template\Component;
 
 final class TemplateMessage extends Message
 {

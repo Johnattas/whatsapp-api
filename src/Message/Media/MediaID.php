@@ -1,6 +1,6 @@
 <?php
 
-namespace Engetec\WhatsappApi\Message\Media;
+namespace johnattas\WhatsappApi\Message\Media;
 
 abstract class MediaID
 {

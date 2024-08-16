@@ -1,6 +1,6 @@
 <?php
 
-namespace Engetec\WhatsappApi\Message\Error;
+namespace johnattas\WhatsappApi\Message\Error;
 
 final class InvalidMessage extends \Exception
 {

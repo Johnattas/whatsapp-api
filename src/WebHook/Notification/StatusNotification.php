@@ -1,8 +1,8 @@
 <?php
 
-namespace Engetec\WhatsappApi\WebHook\Notification;
+namespace johnattas\WhatsappApi\WebHook\Notification;
 
-use Engetec\WhatsappApi\WebHook\Notification;
+use johnattas\WhatsappApi\WebHook\Notification;
 
 final class StatusNotification extends Notification
 {

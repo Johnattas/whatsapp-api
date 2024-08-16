@@ -1,14 +1,14 @@
 <?php
 
-namespace Engetec\WhatsappApi;
+namespace johnattas\WhatsappApi;
 
-use Engetec\WhatsappApi\Message\ButtonReply\ButtonAction;
-use Engetec\WhatsappApi\Message\Contact\ContactName;
-use Engetec\WhatsappApi\Message\Contact\Phone;
-use Engetec\WhatsappApi\Message\CtaUrl\Header;
-use Engetec\WhatsappApi\Message\Media\MediaID;
-use Engetec\WhatsappApi\Message\OptionsList\Action;
-use Engetec\WhatsappApi\Message\Template\Component;
+use johnattas\WhatsappApi\Message\ButtonReply\ButtonAction;
+use johnattas\WhatsappApi\Message\Contact\ContactName;
+use johnattas\WhatsappApi\Message\Contact\Phone;
+use johnattas\WhatsappApi\Message\CtaUrl\Header;
+use johnattas\WhatsappApi\Message\Media\MediaID;
+use johnattas\WhatsappApi\Message\OptionsList\Action;
+use johnattas\WhatsappApi\Message\Template\Component;
 
 class WhatsAppCloudApi
 {

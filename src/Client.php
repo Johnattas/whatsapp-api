@@ -1,9 +1,9 @@
 <?php
 
-namespace Engetec\WhatsappApi;
+namespace johnattas\WhatsappApi;
 
-use Engetec\WhatsappApi\Http\ClientHandler;
-use Engetec\WhatsappApi\Http\GuzzleClientHandler;
+use johnattas\WhatsappApi\Http\ClientHandler;
+use johnattas\WhatsappApi\Http\GuzzleClientHandler;
 
 class Client
 {
@@ -40,7 +40,7 @@ class Client
      *
      * @return Response Raw response from the server.
      *
-     * @throws Engetec\WhatsappApi\Response\ResponseException
+     * @throws johnattas\WhatsappApi\Response\ResponseException
      */
     public function sendMessage(Request\RequestWithBody $request): Response
     {
@@ -70,7 +70,7 @@ class Client
      *
      * @return Response Raw response from the server.
      *
-     * @throws Engetec\WhatsappApi\Response\ResponseException
+     * @throws johnattas\WhatsappApi\Response\ResponseException
      */
     public function uploadMedia(Request\MediaRequest\UploadMediaRequest $request): Response
     {
@@ -100,7 +100,7 @@ class Client
      *
      * @return Response Raw response from the server.
      *
-     * @throws Engetec\WhatsappApi\Response\ResponseException
+     * @throws johnattas\WhatsappApi\Response\ResponseException
      */
     public function downloadMedia(Request\MediaRequest\DownloadMediaRequest $request): Response
     {
@@ -133,7 +133,7 @@ class Client
      *
      * @return Response Raw response from the server.
      *
-     * @throws Engetec\WhatsappApi\Response\ResponseException
+     * @throws johnattas\WhatsappApi\Response\ResponseException
      */
     public function businessProfile(Request\BusinessProfileRequest\BusinessProfileRequest $request): Response
     {
@@ -157,7 +157,7 @@ class Client
      *
      * @return Response Raw response from the server.
      *
-     * @throws Engetec\WhatsappApi\Response\ResponseException
+     * @throws johnattas\WhatsappApi\Response\ResponseException
      */
     public function updateBusinessProfile(Request\BusinessProfileRequest\UpdateBusinessProfileRequest $request): Response
     {

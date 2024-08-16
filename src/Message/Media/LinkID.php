@@ -1,8 +1,8 @@
 <?php
 
-namespace Engetec\WhatsappApi\Message\Media;
+namespace johnattas\WhatsappApi\Message\Media;
 
-use Engetec\WhatsappApi\Message\Error\InvalidMessage;
+use johnattas\WhatsappApi\Message\Error\InvalidMessage;
 
 final class LinkID extends MediaID
 {

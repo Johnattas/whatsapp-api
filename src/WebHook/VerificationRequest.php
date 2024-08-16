@@ -1,6 +1,6 @@
 <?php
 
-namespace Engetec\WhatsappApi\WebHook;
+namespace johnattas\WhatsappApi\WebHook;
 
 final class VerificationRequest
 {

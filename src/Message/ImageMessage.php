@@ -1,8 +1,8 @@
 <?php
 
-namespace Engetec\WhatsappApi\Message;
+namespace johnattas\WhatsappApi\Message;
 
-use Engetec\WhatsappApi\Message\Media\MediaID;
+use johnattas\WhatsappApi\Message\Media\MediaID;
 
 final class ImageMessage extends Message
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Engetec\WhatsappApi\Request;
+namespace johnattas\WhatsappApi\Request;
 
-use Engetec\WhatsappApi\Message\Message;
-use Engetec\WhatsappApi\Request;
+use johnattas\WhatsappApi\Message\Message;
+use johnattas\WhatsappApi\Request;
 
 abstract class MessageRequest extends Request implements RequestWithBody
 {

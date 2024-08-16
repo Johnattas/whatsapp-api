@@ -1,8 +1,8 @@
 <?php
 
-namespace Engetec\WhatsappApi\WebHook\Notification;
+namespace johnattas\WhatsappApi\WebHook\Notification;
 
-use Engetec\WhatsappApi\WebHook\Notification;
+use johnattas\WhatsappApi\WebHook\Notification;
 
 abstract class MessageNotification extends Notification
 {

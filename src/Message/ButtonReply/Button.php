@@ -1,6 +1,6 @@
 <?php
 
-namespace Engetec\WhatsappApi\Message\ButtonReply;
+namespace johnattas\WhatsappApi\Message\ButtonReply;
 
 class Button
 {

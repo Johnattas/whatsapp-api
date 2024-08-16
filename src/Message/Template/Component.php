@@ -1,6 +1,6 @@
 <?php
 
-namespace Engetec\WhatsappApi\Message\Template;
+namespace johnattas\WhatsappApi\Message\Template;
 
 final class Component
 {
