@@ -10,7 +10,7 @@ use johnattas\WhatsappApi\Message\Media\MediaID;
 use johnattas\WhatsappApi\Message\OptionsList\Action;
 use johnattas\WhatsappApi\Message\Template\Component;
 
-class WhatsAppCloudApi
+class WhatsAppApi
 {
     /**
      * @const string Default Graph API version.
@@ -18,9 +18,9 @@ class WhatsAppCloudApi
     public const DEFAULT_GRAPH_VERSION = 'v18.0';
 
     /**
-     * @var WhatsAppCloudApiApp The WhatsAppCloudApiApp entity.
+     * @var WhatsAppApiApp The WhatsAppApiApp entity.
      */
-    protected WhatsAppCloudApiApp $app;
+    protected WhatsAppApiApp $app;
 
     /**
      * @var Client The WhatsApp Cloud Api client service.
@@ -38,7 +38,7 @@ class WhatsAppCloudApi
     private ?string $reply_to = null;
 
     /**
-     * Instantiates a new WhatsAppCloudApi super-class object.
+     * Instantiates a new WhatsAppdApi super-class object.
      *
      * @param array $config
      *
@@ -54,7 +54,7 @@ class WhatsAppCloudApi
             'timeout' => null,
         ], $config);
 
-        $this->app = new WhatsAppCloudApiApp(
+        $this->app = new WhatsAppApiApp(
             $config['from_phone_number_id'],
             $config['access_token'],
             $config['business_id']

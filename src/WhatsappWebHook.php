@@ -6,7 +6,7 @@ use johnattas\WhatsappApi\WebHook\Notification;
 use johnattas\WhatsappApi\WebHook\NotificationFactory;
 use johnattas\WhatsappApi\WebHook\VerificationRequest;
 
-class WebHook
+class WhatsappWebHook
 {
     /**
      * Verify a webhook anytime you configure a new one in your App Dashboard.

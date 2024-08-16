@@ -2,7 +2,7 @@
 
 namespace johnattas\WhatsappApi;
 
-class WhatsAppCloudApiApp
+class WhatsAppApiApp
 {
     /**
      * @const string The name of the environment variable that contains the app from phone number ID.
