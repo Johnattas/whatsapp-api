@@ -1,11 +1,11 @@
 {
-    "name": "netflie/whatsapp-cloud-api",
-    "description": "The first PHP SDK to send and receive messages using a cloud-hosted version of the WhatsApp Business Platform",
+    "name": "johnattas/whatsapp-api",
+    "description": "Uma SDK PHP da API do Whatsapp Cloud simplificada para enviar e receber mensagens.",
     "type": "library",
     "authors": [
         {
-            "name": "Álex Albarca",
-            "email": "alex@albarca.es"
+            "name": "Johnattas Conrady Santana",
+            "email": "johnattas@gmail.com"
         },
         {
             "name": "Álex Albarca",
@@ -19,22 +19,9 @@
         "vlucas/phpdotenv": "^5.4",
         "myclabs/php-enum": "^1.8"
     },
-    "require-dev": {
-        "phpunit/phpunit": "^9.0",
-        "symfony/var-dumper": "^5.0",
-        "phpspec/prophecy-phpunit": "^2.0",
-        "fakerphp/faker": "^1.19",
-        "friendsofphp/php-cs-fixer": "^3.13",
-        "phpstan/phpstan": "^1.9"
-    },
     "autoload": {
         "psr-4": {
-            "Netflie\\WhatsAppCloudApi\\": "src"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Netflie\\WhatsAppCloudApi\\Tests\\": "tests"
+            "Engetec\\WhatsappApi\\": "src"
         }
     },
     "scripts": {
