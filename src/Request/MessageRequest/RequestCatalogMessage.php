@@ -1,8 +1,8 @@
 <?php
 
-namespace Netflie\WhatsAppCloudApi\Request\MessageRequest;
+namespace Engetec\WhatsappApi\Request\MessageRequest;
 
-use Netflie\WhatsAppCloudApi\Request\MessageRequest;
+use Engetec\WhatsappApi\Request\MessageRequest;
 
 final class RequestCatalogMessage extends MessageRequest
 {

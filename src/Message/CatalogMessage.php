@@ -1,6 +1,6 @@
 <?php
 
-namespace Netflie\WhatsAppCloudApi\Message;
+namespace Engetec\WhatsappApi\Message;
 
 final class CatalogMessage extends Message
 {

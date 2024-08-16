@@ -1,8 +1,8 @@
 <?php
 
-namespace Netflie\WhatsAppCloudApi\Message\Media;
+namespace Engetec\WhatsappApi\Message\Media;
 
-use Netflie\WhatsAppCloudApi\Message\Error\InvalidMessage;
+use Engetec\WhatsappApi\Message\Error\InvalidMessage;
 
 final class LinkID extends MediaID
 {

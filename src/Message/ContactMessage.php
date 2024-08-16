@@ -1,10 +1,10 @@
 <?php
 
-namespace Netflie\WhatsAppCloudApi\Message;
+namespace Engetec\WhatsappApi\Message;
 
-use Netflie\WhatsAppCloudApi\Message\Contact\ContactName;
-use Netflie\WhatsAppCloudApi\Message\Contact\Phone;
-use Netflie\WhatsAppCloudApi\Message\Contact\Phones;
+use Engetec\WhatsappApi\Message\Contact\ContactName;
+use Engetec\WhatsappApi\Message\Contact\Phone;
+use Engetec\WhatsappApi\Message\Contact\Phones;
 
 final class ContactMessage extends Message
 {

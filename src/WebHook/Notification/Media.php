@@ -1,6 +1,6 @@
 <?php
 
-namespace Netflie\WhatsAppCloudApi\WebHook\Notification;
+namespace Engetec\WhatsappApi\WebHook\Notification;
 
 final class Media extends MessageNotification
 {

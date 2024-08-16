@@ -1,8 +1,8 @@
 <?php
 
-namespace Netflie\WhatsAppCloudApi\Message;
+namespace Engetec\WhatsappApi\Message;
 
-use Netflie\WhatsAppCloudApi\Message\CtaUrl\Header;
+use Engetec\WhatsappApi\Message\CtaUrl\Header;
 
 final class CtaUrlMessage extends Message
 {

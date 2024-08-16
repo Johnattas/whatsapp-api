@@ -1,8 +1,8 @@
 <?php
 
-namespace Netflie\WhatsAppCloudApi\WebHook\Notification;
+namespace Engetec\WhatsappApi\WebHook\Notification;
 
-use Netflie\WhatsAppCloudApi\WebHook\Notification;
+use Engetec\WhatsappApi\WebHook\Notification;
 
 final class StatusNotification extends Notification
 {

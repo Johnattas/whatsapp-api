@@ -1,8 +1,8 @@
 <?php
 
-namespace Netflie\WhatsAppCloudApi\Message;
+namespace Engetec\WhatsappApi\Message;
 
-use Netflie\WhatsAppCloudApi\Message\Error\InvalidMessage;
+use Engetec\WhatsappApi\Message\Error\InvalidMessage;
 
 final class LocationMessage extends Message
 {

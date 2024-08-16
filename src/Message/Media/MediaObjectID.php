@@ -1,6 +1,6 @@
 <?php
 
-namespace Netflie\WhatsAppCloudApi\Message\Media;
+namespace Engetec\WhatsappApi\Message\Media;
 
 final class MediaObjectID extends MediaID
 {

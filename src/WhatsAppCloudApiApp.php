@@ -1,6 +1,6 @@
 <?php
 
-namespace Netflie\WhatsAppCloudApi;
+namespace Engetec\WhatsappApi;
 
 class WhatsAppCloudApiApp
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Netflie\WhatsAppCloudApi\WebHook\Notification\Support;
+namespace Engetec\WhatsappApi\WebHook\Notification\Support;
 
 final class Business
 {

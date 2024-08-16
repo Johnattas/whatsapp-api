@@ -1,6 +1,6 @@
 <?php
 
-namespace Netflie\WhatsAppCloudApi\Message\Contact;
+namespace Engetec\WhatsappApi\Message\Contact;
 
 final class Phones implements \Countable, \IteratorAggregate
 {

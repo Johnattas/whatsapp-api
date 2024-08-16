@@ -1,8 +1,8 @@
 <?php
 
-namespace Netflie\WhatsAppCloudApi\Request\BusinessProfileRequest;
+namespace Engetec\WhatsappApi\Request\BusinessProfileRequest;
 
-use Netflie\WhatsAppCloudApi\Request;
+use Engetec\WhatsappApi\Request;
 
 final class UpdateBusinessProfileRequest extends Request
 {

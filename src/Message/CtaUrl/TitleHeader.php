@@ -1,6 +1,6 @@
 <?php
 
-namespace Netflie\WhatsAppCloudApi\Message\CtaUrl;
+namespace Engetec\WhatsappApi\Message\CtaUrl;
 
 final class TitleHeader extends Header
 {

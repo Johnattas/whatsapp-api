@@ -1,8 +1,8 @@
 <?php
 
-namespace Netflie\WhatsAppCloudApi\Message;
+namespace Engetec\WhatsappApi\Message;
 
-use Netflie\WhatsAppCloudApi\Message\OptionsList\Action;
+use Engetec\WhatsappApi\Message\OptionsList\Action;
 
 final class OptionsListMessage extends Message
 {

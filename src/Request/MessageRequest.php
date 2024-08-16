@@ -1,9 +1,9 @@
 <?php
 
-namespace Netflie\WhatsAppCloudApi\Request;
+namespace Engetec\WhatsappApi\Request;
 
-use Netflie\WhatsAppCloudApi\Message\Message;
-use Netflie\WhatsAppCloudApi\Request;
+use Engetec\WhatsappApi\Message\Message;
+use Engetec\WhatsappApi\Request;
 
 abstract class MessageRequest extends Request implements RequestWithBody
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Netflie\WhatsAppCloudApi\Message;
+namespace Engetec\WhatsappApi\Message;
 
-use Netflie\WhatsAppCloudApi\Message\ButtonReply\ButtonAction;
+use Engetec\WhatsappApi\Message\ButtonReply\ButtonAction;
 
 class ButtonReplyMessage extends Message
 {

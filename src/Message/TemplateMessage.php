@@ -1,8 +1,8 @@
 <?php
 
-namespace Netflie\WhatsAppCloudApi\Message;
+namespace Engetec\WhatsappApi\Message;
 
-use Netflie\WhatsAppCloudApi\Message\Template\Component;
+use Engetec\WhatsappApi\Message\Template\Component;
 
 final class TemplateMessage extends Message
 {

@@ -1,14 +1,14 @@
 <?php
 
-namespace Netflie\WhatsAppCloudApi;
+namespace Engetec\WhatsappApi;
 
-use Netflie\WhatsAppCloudApi\Message\ButtonReply\ButtonAction;
-use Netflie\WhatsAppCloudApi\Message\Contact\ContactName;
-use Netflie\WhatsAppCloudApi\Message\Contact\Phone;
-use Netflie\WhatsAppCloudApi\Message\CtaUrl\Header;
-use Netflie\WhatsAppCloudApi\Message\Media\MediaID;
-use Netflie\WhatsAppCloudApi\Message\OptionsList\Action;
-use Netflie\WhatsAppCloudApi\Message\Template\Component;
+use Engetec\WhatsappApi\Message\ButtonReply\ButtonAction;
+use Engetec\WhatsappApi\Message\Contact\ContactName;
+use Engetec\WhatsappApi\Message\Contact\Phone;
+use Engetec\WhatsappApi\Message\CtaUrl\Header;
+use Engetec\WhatsappApi\Message\Media\MediaID;
+use Engetec\WhatsappApi\Message\OptionsList\Action;
+use Engetec\WhatsappApi\Message\Template\Component;
 
 class WhatsAppCloudApi
 {

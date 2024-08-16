@@ -1,6 +1,6 @@
 <?php
 
-namespace Netflie\WhatsAppCloudApi\WebHook;
+namespace Engetec\WhatsappApi\WebHook;
 
 final class VerificationRequest
 {

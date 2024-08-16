@@ -1,6 +1,6 @@
 <?php
 
-namespace Netflie\WhatsAppCloudApi\Message\Error;
+namespace Engetec\WhatsappApi\Message\Error;
 
 final class InvalidMessage extends \Exception
 {
