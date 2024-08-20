@@ -16,16 +16,24 @@ final class Media extends MessageNotification
 
     public function __construct(
         string $id,
-        Support\Business $business,
+        Support\MetaAccount $meta_account,
         string $image_id,
         string $mime_type,
         string $sha256,
         string $filename,
         string $caption,
-        string $received_at_timestamp
+        string $received_at_timestamp,
+        array $content,
     ) {
-        parent::__construct($id, $business, $received_at_timestamp);
+        parent::__construct($id, $meta_account, $received_at_timestamp);
 
+        $this->content = [
+            'id' => $image_id,
+            'type' => $mime_type,
+            'sha256' => $sha256,
+            'filename' => $filename,
+            'caption' => $caption,
+        ];
         $this->image_id = $image_id;
         $this->mime_type = $mime_type;
         $this->sha256 = $sha256;

@@ -16,11 +16,13 @@ final class Contact extends MessageNotification
 
     public array $urls;
 
+    public array $content;
+
     public ?\DateTimeImmutable $birthday;
 
     public function __construct(
         string $id,
-        Support\Business $business,
+        Support\MetaAccount $meta_account,
         array $addresses,
         array $emails,
         array $name,
@@ -30,7 +32,18 @@ final class Contact extends MessageNotification
         ?string $birthday,
         string $received_at_timestamp
     ) {
-        parent::__construct($id, $business, $received_at_timestamp);
+        parent::__construct($id, $meta_account, $received_at_timestamp);
+
+        $this->content = [
+            'id' => $id,
+            'addresses' => $addresses,
+            'emails' => $emails,
+            'name' => $name,
+            'company' => $company,
+            'phones' => $phones,
+            'urls' => $urls,
+            'birthday' => $birthday,
+        ];
 
         $this->name = $name;
         $this->addresses = $addresses;

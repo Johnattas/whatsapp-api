@@ -2,7 +2,7 @@
 
 namespace Johnattas\WhatsappApi\WebHook\Notification\Support;
 
-final class Business
+final class MetaAccount
 {
     public string $phone_number_id;
 
@@ -22,5 +22,13 @@ final class Business
     public function phoneNumber(): string
     {
         return $this->phone_number;
+    }
+
+    public function getMeta(): array
+    {
+        return [
+            'phone_number_id' => $this->phone_number_id,
+            'phone_number' => $this->phone_number,
+        ];
     }
 }

@@ -32,7 +32,7 @@ class WhatsAppApiApp
     /**
      * @const string Whatsapp Business ID.
      */
-    public string $business_id;
+    public string $meta_account_id;
 
     /**
      * Sends a Whatsapp text message.
@@ -42,13 +42,13 @@ class WhatsAppApiApp
      * @param string The Whatsapp Business ID.
      *
      */
-    public function __construct(?string $from_phone_number_id = null, ?string $access_token = null, ?string $business_id = null)
+    public function __construct(?string $from_phone_number_id = null, ?string $access_token = null, ?string $meta_account_id = null)
     {
         $this->loadEnv();
 
         $this->from_phone_number_id = $from_phone_number_id ?: $_ENV[static::APP_FROM_PHONE_NUMBER_ENV_NAME] ?? '';
         $this->access_token = $access_token ?: $_ENV[static::APP_TOKEN_ENV_NAME] ?? '';
-        $this->business_id = $business_id ?: $_ENV[static::APP_BUSINESS_ID_ENV_NAME] ?? '';
+        $this->business_id = $meta_account_id ?: $_ENV[static::APP_BUSINESS_ID_ENV_NAME] ?? '';
 
         $this->validate($this->from_phone_number_id, $this->access_token, $this->business_id);
     }
@@ -83,7 +83,7 @@ class WhatsAppApiApp
         return $this->business_id;
     }
 
-    public function validate(string $from_phone_number_id, string $access_token, string $business_id): void
+    public function validate(string $from_phone_number_id, string $access_token, string $meta_account_id): void
     {
         // validate by function type hinting
     }

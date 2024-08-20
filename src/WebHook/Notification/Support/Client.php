@@ -2,7 +2,7 @@
 
 namespace Johnattas\WhatsappApi\WebHook\Notification\Support;
 
-final class Customer
+final class Client
 {
     public string $id;
 

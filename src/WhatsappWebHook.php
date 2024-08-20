@@ -9,17 +9,20 @@ use Johnattas\WhatsappApi\WebHook\VerificationRequest;
 class WhatsappWebHook
 {
 
-    public function verify(array $payload, string $verify_token)
+    public static function process($payload)
+    {
+        return self::read($payload);
+    }
+
+    public static function verify(array $payload, string $verify_token)
     {
         return (new VerificationRequest($verify_token))
             ->validate($payload);
     }
 
 
-    public function read(array $payload)
+    public static function read(array $payload)
     {
-        return (new NotificationFactory())
-            ->buildAllFromPayload($payload);
+        return NotificationFactory::buildAllFromPayload($payload);
     }
-
 }

@@ -3,22 +3,18 @@
 namespace Johnattas\WhatsappApi\WebHook;
 
 use Johnattas\WhatsappApi\WebHook\Notification\Support;
+use Carbon\Carbon;
 
 abstract class Notification
 {
-    public string $id;
 
     public string $moment, $type;
 
-    public Support\Business $business;
-
-    public \DateTimeImmutable $received_at;
-
-    public function __construct(string $id, Support\Business $business, string $received_at_timestamp)
+    public function __construct(public string $id, Support\MetaAccount $meta_account, string $received_at_string)
     {
         $this->id = $id;
-        $this->business = $business;
-        $this->received_at = (new \DateTimeImmutable())->setTimestamp($received_at_timestamp);
+        $this->meta_account = $meta_account->getMeta();
+        $this->received_at = Carbon::createFromTimestamp((int) $received_at_string)->format('Y-m-d H:i:s');
     }
 
     public function id(): string
@@ -28,12 +24,12 @@ abstract class Notification
 
     public function businessPhoneNumberId(): string
     {
-        return $this->business->phoneNumberId();
+        return $this->meta_account->phoneNumberId();
     }
 
     public function businessPhoneNumber(): string
     {
-        return $this->business->phoneNumber();
+        return $this->meta_account->phoneNumber();
     }
 
     public function receivedAt(): \DateTimeImmutable

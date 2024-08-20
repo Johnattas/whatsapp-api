@@ -10,7 +10,7 @@ final class StatusNotification extends Notification
 
     public ?Support\Pricing $pricing = null;
 
-    public string $customer_id;
+    public string $client_id;
 
     public Support\Status $status;
 
@@ -18,14 +18,14 @@ final class StatusNotification extends Notification
 
     public function __construct(
         string $id,
-        Support\Business $business,
-        string $customer_id,
+        array $meta_account,
+        string $client_id,
         string $status,
         string $received_at
     ) {
-        parent::__construct($id, $business, $received_at);
+        parent::__construct($id, $meta_account, $received_at);
 
-        $this->customer_id = $customer_id;
+        $this->client_id = $client_id;
         $this->status = new Support\Status($status);
     }
 
@@ -50,9 +50,9 @@ final class StatusNotification extends Notification
         return $this;
     }
 
-    public function customerId(): string
+    public function clientId(): string
     {
-        return $this->customer_id;
+        return $this->client_id;
     }
 
     public function conversationId(): ?string
@@ -91,13 +91,13 @@ final class StatusNotification extends Notification
         return $this->conversation->isBusinessInitiated();
     }
 
-    public function isCustomerInitiatedConversation(): ?bool
+    public function isClientInitiatedConversation(): ?bool
     {
         if (!$this->conversation) {
             return null;
         }
 
-        return $this->conversation->isCustomerInitiated();
+        return $this->conversation->isClientInitiated();
     }
 
     public function isReferralInitiatedConversation(): ?bool

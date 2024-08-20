@@ -4,11 +4,11 @@ namespace Johnattas\WhatsappApi\WebHook\Notification;
 
 class StatusNotificationFactory
 {
-    public function buildStatusFromPayload(array $metadata, array $status): StatusNotification
+    public static function buildStatusFromPayload(array $metadata, array $status): StatusNotification
     {
         $notification = new StatusNotification(
             $status['id'],
-            new Support\Business($metadata['phone_number_id'], $metadata['display_phone_number']),
+            new Support\MetaAccount($metadata['phone_number_id'], $metadata['display_phone_number']),
             $status['recipient_id'],
             $status['status'],
             $status['timestamp']

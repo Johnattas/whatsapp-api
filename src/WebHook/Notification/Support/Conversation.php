@@ -37,7 +37,7 @@ final class Conversation
         return $this->type->equals(ConversationType::BUSINESS_INITIATED());
     }
 
-    public function isCustomerInitiated(): bool
+    public function isClientInitiated(): bool
     {
         return $this->type->equals(ConversationType::CUSTOMER_INITIATED());
     }

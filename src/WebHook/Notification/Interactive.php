@@ -10,15 +10,24 @@ final class Interactive extends MessageNotification
 
     public string $description;
 
+    public array $content;
+
     public function __construct(
         string $id,
-        Support\Business $business,
+        Support\MetaAccount $meta_account,
         string $item_id,
         string $title,
         string $description,
         string $received_at_timestamp
     ) {
-        parent::__construct($id, $business, $received_at_timestamp);
+        parent::__construct($id, $meta_account, $received_at_timestamp);
+
+        $this->content = [
+            'id' => $id,
+            'item_id' => $item_id,
+            'title' => $title,
+            'description' => $description,
+        ];
 
         $this->item_id = $item_id;
         $this->title = $title;

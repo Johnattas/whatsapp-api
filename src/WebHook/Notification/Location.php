@@ -12,16 +12,26 @@ final class Location extends MessageNotification
 
     public string $address;
 
+    public array $content;
+
     public function __construct(
         string $id,
-        Support\Business $business,
+        Support\MetaAccount $meta_account,
         string $latitude,
         string $longitude,
         string $name,
         string $address,
         string $received_at_timestamp
     ) {
-        parent::__construct($id, $business, $received_at_timestamp);
+        parent::__construct($id, $meta_account, $received_at_timestamp);
+
+        $this->content = [
+            'id' => $id,
+            'latitude' => $latitude,
+            'longitude' => $longitude,
+            'name' => $name,
+            'address' => $address,
+        ];
 
         $this->latitude = $latitude;
         $this->longitude = $longitude;

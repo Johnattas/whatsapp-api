@@ -10,15 +10,18 @@ final class Reaction extends MessageNotification
 
     public function __construct(
         string $id,
-        Support\Business $business,
+        Support\MetaAccount $meta_account,
         string $message_id,
-        string $emoji,
+        array $content,
         string $received_at_timestamp
     ) {
-        parent::__construct($id, $business, $received_at_timestamp);
+        parent::__construct($id, $meta_account, $received_at_timestamp);
 
         $this->message_id = $message_id;
-        $this->emoji = $emoji;
+        $this->content =[
+            'emoji' => $emoji,
+            'id' => $message_id,
+        ];
     }
 
     public function messageId(): string
@@ -28,6 +31,6 @@ final class Reaction extends MessageNotification
 
     public function emoji(): string
     {
-        return $this->emoji;
+        return $this->content;
     }
 }

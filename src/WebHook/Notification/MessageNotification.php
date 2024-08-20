@@ -8,13 +8,13 @@ abstract class MessageNotification extends Notification
 {
     public ?Support\Context $context = null;
 
-    public ?Support\Customer $customer = null;
+    public ?Support\Client $client = null;
 
     public ?Support\Referral $referral = null;
 
-    public function customer(): ?Support\Customer
+    public function client(): ?Support\Client
     {
-        return $this->customer;
+        return $this->$client;
     }
 
     public function replyingToMessageId(): ?string
@@ -59,9 +59,9 @@ abstract class MessageNotification extends Notification
         return $this;
     }
 
-    public function withCustomer(Support\Customer $customer): self
+    public function withClient(Support\Client $client): self
     {
-        $this->customer = $customer;
+        $this->client = $client;
 
         return $this;
     }

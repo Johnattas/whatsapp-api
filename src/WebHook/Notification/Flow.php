@@ -10,15 +10,24 @@ final class Flow extends MessageNotification
 
     public string $response;
 
+    public array $content;
+
     public function __construct(
         string $id,
-        Support\Business $business,
+        Support\MetaAccount $meta_account,
         string $name,
         string $body,
         string $response,
         string $received_at_timestamp
     ) {
-        parent::__construct($id, $business, $received_at_timestamp);
+        parent::__construct($id, $meta_account, $received_at_timestamp);
+
+        $this->content = [
+            'id' => $id,
+            'name' => $name,
+            'body' => $body,
+            'response' => $response,
+        ];
 
         $this->name = $name;
         $this->body = $body;

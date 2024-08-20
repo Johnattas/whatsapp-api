@@ -9,16 +9,24 @@ final class Order extends MessageNotification
     public string $catalog_id;
     public string $message;
     public Products $products;
+    public array $content;
 
     public function __construct(
         string $id,
-        Support\Business $business,
+        Support\MetaAccount $meta_account,
         string $catalog_id,
         string $message,
         Products $products,
         string $received_at_timestamp
     ) {
-        parent::__construct($id, $business, $received_at_timestamp);
+        parent::__construct($id, $meta_account, $received_at_timestamp);
+
+        $this->content = [
+            'id' => $id,
+            'catalog_id' => $catalog_id,
+            'message' => $message,
+            'products' => $products,
+        ];
 
         $this->catalog_id = $catalog_id;
         $this->message = $message;

@@ -1,23 +1,15 @@
 <?php
 
 namespace Johnattas\WhatsappApi\WebHook;
+use Johnattas\WhatsappApi\WebHook\Notification\MessageNotificationFactory;
+use Johnattas\WhatsappApi\WebHook\Notification\StatusNotificationFactory;
 
 final class NotificationFactory
 {
-    public Notification\MessageNotificationFactory $message_notification_factory;
-    public Notification\StatusNotificationFactory $status_notification_factory;
-
-
-    public function __construct()
-    {
-        $this->message_notification_factory = new Notification\MessageNotificationFactory();
-        $this->status_notification_factory = new Notification\StatusNotificationFactory();
-    }
-
     /**
      * @return Notification[]
      */
-    public function buildAllFromPayload(array $payload)
+    public static function buildAllFromPayload($payload)
     {
 
         if (!is_array($payload['entry'] ?? null)) {
@@ -41,14 +33,17 @@ final class NotificationFactory
                 $metadata = $change['value']['metadata'] ?? [];
 
                 if ($message) {
-                    $temp = $this->message_notification_factory->buildFromPayload($metadata, $message, $contact);
+
+                    $temp = MessageNotificationFactory::buildFromPayload($metadata, $message, $contact);
                     $temp->moment = 'receive';
                     $temp->type = $message['type'];
                     $notifications[] = $temp;
                 }
 
                 if ($status) {
-                    $temp = $this->status_notification_factory->buildFromPayload($metadata, $status);
+                    $status = new Notification\StatusNotificationFactory();
+
+                    $temp = StatusNotificationFactory::buildStatusFromPayload($metadata, $status);
                     $temp->moment = 'status';
                     $notifications[] = $temp;
 

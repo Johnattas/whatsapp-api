@@ -4,17 +4,20 @@ namespace Johnattas\WhatsappApi\WebHook\Notification;
 
 final class Text extends MessageNotification
 {
-    public string $message;
+    public array $content;
 
-    public function __construct(string $id, Support\Business $business, string $message, string $received_at_timestamp)
+    public function __construct(string $id, Support\MetaAccount $meta_account, string $message, string $received_at_timestamp)
     {
-        parent::__construct($id, $business, $received_at_timestamp);
+        parent::__construct($id, $meta_account, $received_at_timestamp);
 
-        $this->message = $message;
+        $this->content = [
+            'id' => $id,
+            'message' => $message,
+        ];
     }
 
     public function message(): string
     {
-        return $this->message;
+        return $this->content;
     }
 }
