@@ -41,8 +41,6 @@ final class NotificationFactory
                 }
 
                 if ($status) {
-                    $status = new Notification\StatusNotificationFactory();
-
                     $temp = StatusNotificationFactory::buildStatusFromPayload($metadata, $status);
                     $temp->moment = 'status';
                     $notifications[] = $temp;

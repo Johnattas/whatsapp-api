@@ -16,13 +16,7 @@ final class StatusNotification extends Notification
 
     public ?Support\Error $error = null;
 
-    public function __construct(
-        string $id,
-        array $meta_account,
-        string $client_id,
-        string $status,
-        string $received_at
-    ) {
+    public function __construct( string $id, array $meta_account, string $client_id,string $status, string $received_at) {
         parent::__construct($id, $meta_account, $received_at);
 
         $this->client_id = $client_id;
